@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard — Sudarshan Madewad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="cursor-follower" id="cursorFollower">
+        <span class="cursor-label" id="cursorLabel"></span>
+    </div>
+    <div class="page-transition" id="pageTransition"></div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">SM<span class="accent">.</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link" data-label="01">Index</a>
+            <a href="journey.html" class="nav-link" data-label="02">Journey</a>
+            <a href="archive.html" class="nav-link" data-label="03">Archive</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">◐</span>
+        </button>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="index.html" class="back-link">
+                <span class="mono-small">← BACK TO INDEX</span>
+            </a>
+            <h1 class="project-hero-title" data-animate="hero">
+                <span class="hero-line">LIBRARY</span>
+                <span class="hero-line">MANAGEMENT</span>
+            </h1>
+            <p class="project-hero-subtitle">Dashboard Design</p>
+        </div>
+    </section>
+
+    <section class="project-layout">
+        <aside class="project-sidebar">
+            <div class="project-sidebar-inner">
+                <div class="sidebar-block">
+                    <span class="mono-small">PROJECT</span>
+                    <p class="sidebar-value">Library Management Dashboard</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">ROLE</span>
+                    <p class="sidebar-value">UI/UX Designer</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">TIMELINE</span>
+                    <p class="sidebar-value">5 Weeks</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">TOOLS</span>
+                    <p class="sidebar-value">Figma, FigJam, Maze</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">SKILLS</span>
+                    <div class="sidebar-tags">
+                        <span class="tag">Dashboard Design</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">UX Research</span>
+                        <span class="tag">Design Systems</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="project-content">
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">01 — PROBLEM</span>
+                <h2 class="content-heading">THE CHALLENGE</h2>
+                <p class="content-text">
+                    University librarians struggled with outdated management tools that required 
+                    manual data entry, offered no analytics, and had poor usability. The existing 
+                    system was DOS-based and created significant workflow inefficiencies.
+                </p>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">02 — RESEARCH</span>
+                <h2 class="content-heading">UNDERSTANDING USERS</h2>
+                <p class="content-text">
+                    Shadowed 4 librarians across 2 institutions, documenting their daily workflows. 
+                    Identified key tasks: book cataloging, student borrowing management, overdue 
+                    tracking, and inventory reporting.
+                </p>
+                <div class="content-image-container" data-animate="reveal">
+                    <div class="content-image-placeholder">
+                        <span class="placeholder-text">USER FLOW DIAGRAM</span>
+                        <span class="placeholder-sub">Task Analysis & Workflows</span>
+                    </div>
+                </div>
+                <div class="content-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="mono-small">LIBRARIANS SHADOWED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">23</span>
+                        <span class="mono-small">TASKS DOCUMENTED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="mono-small">USABILITY TESTS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">03 — WIREFRAMES</span>
+                <h2 class="content-heading">INFORMATION ARCHITECTURE</h2>
+                <p class="content-text">
+                    Designed the dashboard around the most frequent tasks: quick book search, 
+                    borrowing status overview, and expiry alerts. Created modular widget-based 
+                    layouts for customizable dashboards.
+                </p>
+                <div class="content-image-container" data-animate="reveal">
+                    <div class="content-image-placeholder">
+                        <span class="placeholder-text">WIREFRAME ITERATIONS</span>
+                        <span class="placeholder-sub">Dashboard Layouts</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">04 — UI DESIGN</span>
+                <h2 class="content-heading">VISUAL SYSTEM</h2>
+                <p class="content-text">
+                    Built a clean, data-dense design system optimized for daily use. Color coding 
+                    for status indicators, clear data hierarchy, and scannable typography ensure 
+                    librarians can process information quickly.
+                </p>
+                <div class="content-image-container full-width" data-animate="reveal">
+                    <div class="content-image-placeholder large">
+                        <span class="placeholder-text">DASHBOARD — MAIN VIEW</span>
+                        <span class="placeholder-sub">Analytics & Overview</span>
+                    </div>
+                </div>
+                <div class="image-grid">
+                    <div class="content-image-container" data-animate="reveal">
+                        <div class="content-image-placeholder">
+                            <span class="placeholder-text">BOOK CATALOG</span>
+                        </div>
+                    </div>
+                    <div class="content-image-container" data-animate="reveal">
+                        <div class="content-image-placeholder">
+                            <span class="placeholder-text">BORROWING FLOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">05 — RESULTS</span>
+                <h2 class="content-heading">IMPACT</h2>
+                <div class="content-stats results-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">-70<span class="accent">%</span></span>
+                        <span class="mono-small">TASK TIME</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95<span class="accent">%</span></span>
+                        <span class="mono-small">SATISFACTION SCORE</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.8<span class="accent">/5</span></span>
+                        <span class="mono-small">USABILITY RATING</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="next-project" data-cursor="NEXT">
+        <a href="project-manipal.html" class="next-project-link">
+            <span class="mono-small">NEXT PROJECT</span>
+            <h2 class="next-project-title">
+                <span>MANIPAL UNIVERSITY</span>
+                <span>LANDING PAGE</span>
+                <span class="next-arrow">→</span>
+            </h2>
+        </a>
+    </section>
+
+    <footer class="footer footer--minimal">
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LINKEDIN</a>
+                <a href="archive.html" class="footer-link">RESUME</a>
+                <a href="mailto:sudarshanmadewad1@gmail.com" class="footer-link">EMAIL</a>
+            </div>
+            <span class="mono-small">© 2026 SUDARSHAN MADEWAD</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
