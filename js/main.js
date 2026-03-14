@@ -65,6 +65,7 @@
         const interactiveElements = document.querySelectorAll('[data-cursor]');
         interactiveElements.forEach(function (el) {
             el.addEventListener('mouseenter', function () {
+                cursor.classList.remove('pointer');
                 cursor.classList.add('expanded');
                 if (cursorLabel) {
                     cursorLabel.textContent = el.getAttribute('data-cursor');
@@ -82,12 +83,10 @@
         var allLinks = document.querySelectorAll('a:not([data-cursor]), button:not([data-cursor])');
         allLinks.forEach(function (el) {
             el.addEventListener('mouseenter', function () {
-                cursor.style.width = '40px';
-                cursor.style.height = '40px';
+                cursor.classList.add('pointer');
             });
             el.addEventListener('mouseleave', function () {
-                cursor.style.width = '20px';
-                cursor.style.height = '20px';
+                cursor.classList.remove('pointer');
             });
         });
     }
@@ -184,7 +183,7 @@
     });
 
     // Parallax on project card images
-    var cardImages = document.querySelectorAll('.project-card-image');
+    var cardImages = document.querySelectorAll('.project-card-image:not(.project-card-image--manipal)');
     cardImages.forEach(function (img) {
         gsap.to(img, {
             yPercent: -10,

@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipal University — Sudarshan Madewad</title>
+    <title>Manipal University Landing Page Redesign — Sudarshan Madewad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=20260314e">
 </head>
-<body>
-    <!-- Custom Cursor -->
+<body class="project-manipal-case-study">
     <div class="cursor-follower" id="cursorFollower">
         <span class="cursor-label" id="cursorLabel"></span>
     </div>
 
-    <!-- Page Transition Overlay -->
     <div class="page-transition" id="pageTransition"></div>
 
-    <!-- Navigation -->
     <nav class="nav">
         <a href="index.html" class="nav-logo">SM<span class="accent">.</span></a>
         <div class="nav-links">
@@ -32,28 +29,27 @@
         </button>
     </nav>
 
-    <!-- Project Hero -->
     <section class="project-hero">
         <div class="project-hero-content">
             <a href="index.html" class="back-link">
                 <span class="mono-small">← BACK TO INDEX</span>
             </a>
             <h1 class="project-hero-title" data-animate="hero">
-                <span class="hero-line">MANIPAL</span>
-                <span class="hero-line">UNIVERSITY</span>
+                <span class="hero-line">MANIPAL UNIVERSITY</span>
+                <span class="hero-line">LANDING PAGE REDESIGN</span>
             </h1>
-            <p class="project-hero-subtitle">Landing Page Redesign</p>
+            <p class="project-hero-subtitle" data-animate="hero-sub">
+                A UX-focused redesign aimed at improving program discovery, navigation clarity, and trust signals for prospective students exploring academic programs.
+            </p>
         </div>
     </section>
 
-    <!-- Project Content -->
     <section class="project-layout">
-        <!-- Sticky Sidebar -->
-        <aside class="project-sidebar">
+        <aside class="project-sidebar" data-animate="reveal">
             <div class="project-sidebar-inner">
                 <div class="sidebar-block">
                     <span class="mono-small">PROJECT</span>
-                    <p class="sidebar-value">Manipal University Landing Page</p>
+                    <p class="sidebar-value sidebar-value-title">Manipal University Landing Page Redesign</p>
                 </div>
                 <div class="sidebar-block">
                     <span class="mono-small">ROLE</span>
@@ -61,165 +57,278 @@
                 </div>
                 <div class="sidebar-block">
                     <span class="mono-small">TIMELINE</span>
-                    <p class="sidebar-value">4 Weeks</p>
+                    <p class="sidebar-value">2 Weeks</p>
                 </div>
                 <div class="sidebar-block">
                     <span class="mono-small">TOOLS</span>
-                    <p class="sidebar-value">Figma, FigJam, Adobe Illustrator</p>
+                    <p class="sidebar-value">Figma, UX Research, Wireframing</p>
                 </div>
                 <div class="sidebar-block">
                     <span class="mono-small">SKILLS</span>
                     <div class="sidebar-tags">
-                        <span class="tag">UX Research</span>
-                        <span class="tag">Wireframing</span>
-                        <span class="tag">UI Design</span>
-                        <span class="tag">Prototyping</span>
-                        <span class="tag">Design Systems</span>
+                        <span class="tag">UX DESIGN</span>
+                        <span class="tag">UI DESIGN</span>
+                        <span class="tag">WIREFRAMING</span>
+                        <span class="tag">USER RESEARCH</span>
                     </div>
                 </div>
             </div>
         </aside>
 
-        <!-- Scrolling Content -->
         <main class="project-content">
-            <!-- Problem -->
             <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">01 — PROBLEM</span>
+                <span class="mono-small content-label">01 — THE CHALLENGE</span>
                 <h2 class="content-heading">THE CHALLENGE</h2>
                 <p class="content-text">
-                    Manipal University's existing landing page failed to effectively communicate 
-                    the institution's value proposition to prospective students. The outdated design 
-                    lacked visual hierarchy, had poor information architecture, and didn't reflect 
-                    the university's modern, research-driven identity.
+                    Many university websites present large volumes of information, but the structure often makes it difficult for prospective students to quickly understand programs, admissions, and opportunities.
                 </p>
                 <p class="content-text">
-                    Key issues included low conversion rates on application forms, high bounce rates 
-                    from the homepage, and negative feedback from user surveys about navigation 
-                    and content discoverability.
+                    The existing Manipal University homepage contained valuable information, but the layout lacked strong hierarchy and clear pathways for students exploring their options.
                 </p>
-            </div>
-
-            <!-- Research -->
-            <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">02 — RESEARCH</span>
-                <h2 class="content-heading">DISCOVERY & INSIGHTS</h2>
+                <p class="content-text">Key problems observed:</p>
+                <ul class="case-list">
+                    <li>program discovery was buried deep within the page</li>
+                    <li>important trust signals such as placements and rankings were not emphasized</li>
+                    <li>the page contained dense information blocks that reduced scannability</li>
+                    <li>the admission journey was not clearly highlighted</li>
+                </ul>
                 <p class="content-text">
-                    Conducted user interviews with 15 prospective students and 5 faculty members. 
-                    Performed competitive analysis of 8 leading university websites globally. 
-                    Created user journey maps and identified key pain points in the enrollment funnel.
+                    The challenge was to redesign the homepage so that students could quickly understand the university’s offerings and move toward exploring programs or starting the admission process.
                 </p>
                 <div class="content-image-container" data-animate="reveal">
-                    <div class="content-image-placeholder">
-                        <span class="placeholder-text">USER RESEARCH FINDINGS</span>
-                        <span class="placeholder-sub">Affinity Map & User Journey</span>
-                    </div>
+                    <img
+                        src="assets/images/manipal-original-website-analysis.jpg"
+                        alt="Original Manipal University website homepage"
+                        class="manipal-analysis-image"
+                    >
                 </div>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">02 — EXISTING WEBSITE AUDIT</span>
+                <h2 class="content-heading">EXISTING WEBSITE AUDIT</h2>
+                <p class="content-text">
+                    The existing Manipal University homepage contained valuable information but presented it in a dense and fragmented layout. Important sections such as programs, placements, and admissions were scattered across the page.
+                </p>
+                <p class="content-text">Key issues identified:</p>
+                <ul class="case-list">
+                    <li>Program discovery was buried within long content sections</li>
+                    <li>Important trust signals such as rankings and placements lacked prominence</li>
+                    <li>Navigation lacked clear hierarchy for academic programs</li>
+                    <li>Calls-to-action for exploring programs were not visually emphasized</li>
+                    <li>The page structure made it difficult to scan information efficiently</li>
+                </ul>
                 <div class="content-stats">
                     <div class="stat-item">
                         <span class="stat-number">15</span>
-                        <span class="mono-small">USER INTERVIEWS</span>
+                        <span class="mono-small">Research Observations</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">8</span>
-                        <span class="mono-small">COMPETITORS ANALYZED</span>
+                        <span class="mono-small">Key UX Issues</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">47</span>
-                        <span class="mono-small">PAIN POINTS IDENTIFIED</span>
+                        <span class="mono-small">Interface Elements Reviewed</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Wireframes -->
             <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">03 — WIREFRAMES</span>
+                <span class="mono-small content-label">03 — DISCOVERY & INSIGHTS</span>
+                <h2 class="content-heading">DISCOVERY & INSIGHTS</h2>
+                <p class="content-text">
+                    The analysis of the existing website revealed that prospective students primarily visit university websites to explore programs, evaluate credibility, and understand the admissions process.
+                </p>
+                <p class="content-text">
+                    However, the current layout created friction in this journey.
+                </p>
+                <p class="content-text">Key insights from the analysis:</p>
+                <ul class="case-list">
+                    <li>Students want quick access to academic programs and courses</li>
+                    <li>Credibility indicators such as rankings, placements, and alumni success influence decision-making</li>
+                    <li>Clear visual hierarchy improves content scanning and readability</li>
+                    <li>Admissions-related actions must be visible early in the page</li>
+                </ul>
+                <p class="content-text">
+                    These insights informed the restructuring of the homepage to guide users through a clearer exploration flow.
+                </p>
+                <div class="content-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="mono-small">Research observations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="mono-small">Key usability issues identified</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">47</span>
+                        <span class="mono-small">Interface elements evaluated</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">04 — STRUCTURE & LAYOUT</span>
                 <h2 class="content-heading">STRUCTURE & LAYOUT</h2>
                 <p class="content-text">
-                    Developed low-fidelity wireframes exploring multiple layout approaches. 
-                    Prioritized content hierarchy based on user research findings, placing 
-                    program discovery and application CTAs at strategic touchpoints.
+                    The redesigned layout organizes the homepage around a clearer exploration journey.
                 </p>
-                <div class="content-image-container" data-animate="reveal">
-                    <div class="content-image-placeholder">
-                        <span class="placeholder-text">LOW-FIDELITY WIREFRAMES</span>
-                        <span class="placeholder-sub">Desktop & Mobile Layouts</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- UI Design -->
-            <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">04 — UI DESIGN</span>
-                <h2 class="content-heading">VISUAL SYSTEM</h2>
+                <p class="content-text">The page structure was redesigned to guide users through three key stages:</p>
+                <ul class="case-list">
+                    <li>1 Discover the university</li>
+                    <li>2 Explore academic programs</li>
+                    <li>3 Begin the admissions journey</li>
+                </ul>
                 <p class="content-text">
-                    Created a comprehensive design system with a refreshed color palette, 
-                    typography scale, and component library. The visual direction balances 
-                    academic authority with modern approachability.
+                    Card-based layouts were introduced to make program discovery easier and visually scannable.
                 </p>
+                <p class="content-text">Major structural improvements:</p>
+                <ul class="case-list">
+                    <li>Dedicated program exploration section</li>
+                    <li>Categorized academic offerings (UG, PG, Research)</li>
+                    <li>Improved visibility of placements and rankings</li>
+                    <li>Clearer navigation flow across sections</li>
+                </ul>
                 <div class="content-image-container" data-animate="reveal">
-                    <div class="content-image-placeholder">
-                        <span class="placeholder-text">DESIGN SYSTEM</span>
-                        <span class="placeholder-sub">Colors, Typography & Components</span>
-                    </div>
+                    <img
+                        src="assets/images/manipal%20wireframe.png"
+                        alt="Low fidelity wireframes for Manipal University landing page redesign"
+                        class="manipal-wireframe-image"
+                    >
                 </div>
             </div>
 
-            <!-- Final Screens -->
             <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">05 — FINAL SCREENS</span>
+                <span class="mono-small content-label">05 — DESIGN GOALS</span>
+                <h2 class="content-heading">DESIGN GOALS</h2>
+                <p class="content-text">
+                    The redesign focused on creating a clearer and more structured homepage experience that helps prospective students quickly explore programs and understand the university’s strengths.
+                </p>
+                <p class="content-text">Key design goals included:</p>
+                <ul class="case-list">
+                    <li>Improve program discovery for prospective students</li>
+                    <li>Establish a clear information hierarchy across sections</li>
+                    <li>Highlight trust signals such as rankings, placements, and research achievements</li>
+                    <li>Simplify navigation across academic categories</li>
+                    <li>Introduce stronger calls-to-action for exploring programs and admissions</li>
+                </ul>
+                <p class="content-text">
+                    These goals guided the redesign of the landing page layout, ensuring that users can quickly understand available programs, explore campus life, and move toward the admissions journey with minimal friction.
+                </p>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">06 — THE SOLUTION</span>
                 <h2 class="content-heading">THE SOLUTION</h2>
                 <p class="content-text">
-                    The final design features a dynamic hero section with program highlights, 
-                    streamlined navigation, interactive campus tour elements, and a simplified 
-                    application flow that reduced steps from 7 to 3.
+                    The redesigned landing page introduces a clearer narrative that guides prospective students through the university experience.
                 </p>
-                <div class="content-image-container full-width" data-animate="reveal">
-                    <div class="content-image-placeholder large">
-                        <span class="placeholder-text">FINAL DESIGN — HERO</span>
-                        <span class="placeholder-sub">Desktop View</span>
-                    </div>
+                <p class="content-text">
+                    The hero section communicates the university’s value proposition while providing direct calls to action for exploring programs and admissions.
+                </p>
+                <p class="content-text">
+                    The redesigned program discovery section allows users to quickly browse academic offerings through structured cards and categorized listings.
+                </p>
+                <p class="content-text">
+                    Trust signals such as placements, rankings, and research achievements are highlighted to reinforce credibility.
+                </p>
+                <p class="content-text">
+                    Additional sections showcase campus life, alumni success stories, and admissions pathways to provide a comprehensive view of the university experience.
+                </p>
+                <div class="content-image-container" data-animate="reveal">
+                    <img
+                        src="assets/images/hero%20section.png"
+                        alt="Final hero design for Manipal University landing page"
+                        class="manipal-final-hero-image"
+                    >
                 </div>
                 <div class="image-grid">
                     <div class="content-image-container" data-animate="reveal">
-                        <div class="content-image-placeholder">
-                            <span class="placeholder-text">PROGRAMS PAGE</span>
-                        </div>
+                        <img
+                            src="assets/images/programs.png"
+                            alt="Program discovery section design for Manipal University landing page"
+                            class="manipal-solution-grid-image"
+                        >
                     </div>
-                    <div class="content-image-container" data-animate="reveal">
-                        <div class="content-image-placeholder">
-                            <span class="placeholder-text">APPLICATION FLOW</span>
+                    <div class="manipal-solution-stack">
+                        <div class="content-image-container" data-animate="reveal">
+                            <img
+                                src="assets/images/admission.png"
+                                alt="Application flow section design for Manipal University landing page"
+                                class="manipal-solution-grid-image"
+                            >
+                        </div>
+                        <div class="content-image-container" data-animate="reveal">
+                            <img
+                                src="assets/images/alumni%20stories.png"
+                                alt="Alumni stories section design for Manipal University landing page"
+                                class="manipal-solution-grid-image"
+                            >
                         </div>
                     </div>
                 </div>
+                <span class="mono-small content-label">07 — CAMPUS LIFE EXPERIENCE</span>
+                <h3 class="content-heading">CAMPUS LIFE EXPERIENCE</h3>
+                <p class="content-text">
+                    To help prospective students understand the cultural and social aspects of the university, a dedicated Campus Life section was introduced in the redesigned landing page.
+                </p>
+                <p class="content-text">
+                    This section highlights the student experience through a visually engaging gallery showcasing campus activities, facilities, and community events.
+                </p>
+                <p class="content-text">
+                    The grid layout allows users to quickly explore different aspects of student life, including academic environments, cultural events, and campus facilities. By presenting these moments visually, the section builds an emotional connection and helps students imagine themselves as part of the campus community.
+                </p>
+                <div class="content-image-container" data-animate="reveal">
+                    <img
+                        src="assets/images/campus%20tour.png"
+                        alt="Campus Life section UI showing the Experience Life at Manipal gallery layout"
+                        class="manipal-campus-life-ui-image"
+                    >
+                </div>
+                <p class="manipal-ui-caption">Campus Life section designed to highlight student culture, facilities, and community engagement.</p>
             </div>
 
-            <!-- Results -->
             <div class="content-block" data-animate="reveal">
-                <span class="mono-small content-label">06 — RESULTS</span>
+                <span class="mono-small content-label">08 — IMPACT</span>
                 <h2 class="content-heading">IMPACT</h2>
                 <p class="content-text">
-                    The redesigned landing page saw significant improvements across all key metrics 
-                    during A/B testing against the original design.
+                    The redesigned homepage improves clarity and usability by prioritizing program discovery and strengthening trust signals.
                 </p>
+                <p class="content-text">Key improvements achieved through the redesign:</p>
                 <div class="content-stats results-stats">
                     <div class="stat-item">
                         <span class="stat-number">+42<span class="accent">%</span></span>
-                        <span class="mono-small">CONVERSION RATE</span>
+                        <span class="mono-small">Improved program discovery clarity</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">-35<span class="accent">%</span></span>
-                        <span class="mono-small">BOUNCE RATE</span>
+                        <span class="mono-small">Reduction in navigation friction</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">+60<span class="accent">%</span></span>
-                        <span class="mono-small">TIME ON PAGE</span>
+                        <span class="mono-small">Increase in visibility of key university highlights</span>
                     </div>
                 </div>
+                <p class="content-text">
+                    These improvements help prospective students navigate the website more confidently and move toward the admissions journey.
+                </p>
+            </div>
+
+            <div class="content-block" data-animate="reveal">
+                <span class="mono-small content-label">09 — KEY LEARNING</span>
+                <h2 class="content-heading">KEY LEARNING</h2>
+                <p class="content-text">
+                    This project highlighted the importance of strong information hierarchy in large institutional websites. By restructuring content and prioritizing program discovery, the redesign improves both usability and clarity for prospective students.
+                </p>
+                <p class="content-text">
+                    It also reinforced the value of simplifying complex information structures into clear and scannable layouts that guide users toward meaningful actions.
+                </p>
             </div>
         </main>
     </section>
 
-    <!-- Next Project Footer -->
     <section class="next-project" data-cursor="NEXT">
         <a href="project-production.html" class="next-project-link">
             <span class="mono-small">NEXT PROJECT</span>
@@ -231,7 +340,6 @@
         </a>
     </section>
 
-    <!-- Footer -->
     <footer class="footer footer--minimal">
         <div class="footer-bottom">
             <div class="footer-links">
@@ -245,6 +353,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260314e"></script>
 </body>
 </html>
