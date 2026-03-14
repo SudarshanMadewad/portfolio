@@ -1734,8 +1734,25 @@ img {
         margin-bottom: var(--spacing-lg);
     }
 
+    .hero {
+        padding: var(--spacing-2xl) var(--spacing);
+    }
+
+    .hero-title {
+        font-size: clamp(34px, 12vw, 56px);
+        line-height: 0.95;
+    }
+
+    .hero-line {
+        overflow: visible;
+    }
+
     .hero-role-line {
         width: 30px;
+    }
+
+    .project-manipal-case-study .project-hero {
+        padding-top: calc(var(--spacing-2xl) + 44px);
     }
 
     .hero-description br {
@@ -1748,11 +1765,46 @@ img {
 
     .experience-header,
     .experience-row {
-        grid-template-columns: 60px 1fr;
+        grid-template-columns: 72px minmax(0, 1fr);
+    }
+
+    .experience-row {
+        grid-template-areas:
+            "year company"
+            "year role";
+        align-items: start;
+        row-gap: 6px;
+    }
+
+    .experience-year {
+        grid-area: year;
+    }
+
+    .experience-company {
+        grid-area: company;
+    }
+
+    .experience-header > :nth-child(n+3) {
+        display: none;
     }
 
     .experience-role {
-        display: none;
+        display: block;
+        grid-area: role;
+        font-size: 12px;
+        color: var(--color-muted);
+        line-height: 1.5;
+    }
+
+    .experience-row:hover {
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .experience-company {
+        line-height: 1.15;
+        word-break: break-word;
     }
 
     .content-image-container.full-width {
