@@ -305,9 +305,21 @@
         });
     });
 
+    // --- Disable unavailable case-study cards while keeping href for later ---
+    var unavailableProjectCards = document.querySelectorAll('.project-card--unavailable');
+    unavailableProjectCards.forEach(function (card) {
+        card.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    });
+
     // --- Directory item hover with physics ---
     var directoryItems = document.querySelectorAll('.directory-item');
     directoryItems.forEach(function (item) {
+        if (item.classList.contains('directory-item--unavailable')) {
+            return;
+        }
+
         item.addEventListener('mouseenter', function () {
             gsap.to(item, {
                 x: 12,
@@ -321,6 +333,14 @@
                 duration: 0.3,
                 ease: 'power2.out'
             });
+        });
+    });
+
+    // --- Disable unavailable archive directory items while keeping href for later ---
+    var unavailableDirectoryItems = document.querySelectorAll('.directory-item--unavailable');
+    unavailableDirectoryItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            event.preventDefault();
         });
     });
 

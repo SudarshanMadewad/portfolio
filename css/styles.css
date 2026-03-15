@@ -559,6 +559,65 @@ img {
     box-shadow: var(--shadow-brutal);
 }
 
+.project-card--unavailable {
+    cursor: not-allowed;
+}
+
+.project-card--unavailable::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.45);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.project-card--unavailable::after {
+    content: attr(data-unavailable-message);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 14px;
+    border: var(--border-thin);
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.project-card--unavailable:hover,
+.project-card--unavailable:focus-visible {
+    transform: none;
+    box-shadow: none;
+}
+
+.project-card--unavailable:hover::before,
+.project-card--unavailable:hover::after,
+.project-card--unavailable:focus-visible::before,
+.project-card--unavailable:focus-visible::after {
+    opacity: 1;
+}
+
+.project-card--unavailable:hover .project-card-placeholder {
+    filter: grayscale(100%);
+    background: var(--color-surface);
+}
+
+.project-card--unavailable:hover .project-card-placeholder .project-card-placeholder-num,
+.project-card--unavailable:hover .project-card-placeholder .project-card-placeholder-title {
+    color: var(--color-muted);
+}
+
 /* --- Design Process --- */
 .process-section {
     border-bottom: var(--border-thick);
@@ -1386,6 +1445,76 @@ img {
 .directory-item:hover .directory-arrow {
     transform: translateX(8px);
     color: var(--color-primary);
+}
+
+.directory-item--unavailable {
+    cursor: not-allowed;
+}
+
+.directory-item--unavailable::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.45);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.directory-item--unavailable::after {
+    content: attr(data-unavailable-message);
+    position: absolute;
+    top: 50%;
+    right: var(--spacing-lg);
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    border: var(--border-thin);
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.directory-item--unavailable .directory-number,
+.directory-item--unavailable .directory-name,
+.directory-item--unavailable .directory-type,
+.directory-item--unavailable .directory-year,
+.directory-item--unavailable .directory-arrow {
+    position: relative;
+    z-index: 2;
+}
+
+.directory-item--unavailable:hover,
+.directory-item--unavailable:focus-visible {
+    background: transparent;
+}
+
+.directory-item--unavailable:hover::before,
+.directory-item--unavailable:hover::after,
+.directory-item--unavailable:focus-visible::before,
+.directory-item--unavailable:focus-visible::after {
+    opacity: 1;
+}
+
+.directory-item--unavailable:hover .directory-name {
+    color: var(--color-text);
+}
+
+.directory-item--unavailable:hover .directory-name::after {
+    content: none;
+    animation: none;
+}
+
+.directory-item--unavailable:hover .directory-arrow {
+    transform: none;
+    color: var(--color-muted);
 }
 
 /* --- Contact --- */
