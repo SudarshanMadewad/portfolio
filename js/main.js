@@ -22,12 +22,15 @@
     function loadTheme() {
         try {
             const saved = localStorage.getItem('portfolio-theme');
-            if (saved) {
+            if (saved === 'light' || saved === 'dark') {
                 setTheme(saved);
+                return;
             }
         } catch (e) {
             // localStorage unavailable
         }
+
+        setTheme('dark');
     }
 
     loadTheme();

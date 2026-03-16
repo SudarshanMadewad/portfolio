@@ -1327,14 +1327,12 @@ img {
     letter-spacing: -0.01em;
     padding: 6px 14px;
     border: 2px solid var(--color-text);
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .skill-tags span:hover {
     background: var(--color-text);
     color: var(--color-background);
-    transform: translate(-2px, -2px);
-    box-shadow: var(--shadow-brutal);
 }
 
 /* --- Philosophy --- */
