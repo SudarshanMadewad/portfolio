@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5 Gestalt Principles Every UI Designer Must Know — Sudarshan Madewad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=20260626a">
+</head>
+<body class="project-manipal-case-study">
+    <div class="cursor-follower" id="cursorFollower">
+        <span class="cursor-label" id="cursorLabel"></span>
+    </div>
+
+    <div class="page-transition" id="pageTransition"></div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">SM<span class="accent">.</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link" data-label="01">Index</a>
+            <a href="journey.html" class="nav-link" data-label="02">Journey</a>
+            <a href="articles.html" class="nav-link active" data-label="03">Articles</a>
+            <a href="archive.html" class="nav-link" data-label="04">Archive</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">◐</span>
+        </button>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="articles.html" class="back-link">
+                <span class="mono-small">← BACK TO ARTICLES</span>
+            </a>
+            <h1 class="project-hero-title" data-animate="hero">
+                <span class="hero-line">THE 5 GESTALT</span>
+                <span class="hero-line">PRINCIPLES EVERY UI DESIGNER MUST KNOW</span>
+            </h1>
+            <p class="project-hero-subtitle" data-animate="hero-sub">
+                Your users never read your interface. They feel it first. Here's the psychology behind why.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-layout">
+        <aside class="project-sidebar" data-animate="reveal">
+            <div class="project-sidebar-inner">
+                <div class="sidebar-block">
+                    <span class="mono-small">TOPIC</span>
+                    <p class="sidebar-value">UX Principles</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">READ TIME</span>
+                    <p class="sidebar-value">5 min read</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">PUBLISHED</span>
+                    <p class="sidebar-value">June 2026</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">LEVEL</span>
+                    <p class="sidebar-value">Beginner</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">SECTIONS</span>
+                    <div class="sidebar-detail-list">
+                        <a href="#why-this-matters" class="sidebar-detail-line article-toc-link" data-section-link="why-this-matters">01 — WHY THIS MATTERS</a>
+                        <a href="#proximity" class="sidebar-detail-line article-toc-link" data-section-link="proximity">02 — PROXIMITY</a>
+                        <a href="#similarity" class="sidebar-detail-line article-toc-link" data-section-link="similarity">03 — SIMILARITY</a>
+                        <a href="#closure" class="sidebar-detail-line article-toc-link" data-section-link="closure">04 — CLOSURE</a>
+                        <a href="#continuity" class="sidebar-detail-line article-toc-link" data-section-link="continuity">05 — CONTINUITY</a>
+                        <a href="#figure-ground" class="sidebar-detail-line article-toc-link" data-section-link="figure-ground">06 — FIGURE &amp; GROUND</a>
+                        <a href="#takeaway" class="sidebar-detail-line article-toc-link" data-section-link="takeaway">07 — THE TAKEAWAY</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="project-content">
+            <div class="content-block" id="why-this-matters" data-section-id="why-this-matters" data-animate="reveal">
+                <span class="mono-small content-label">01 — WHY THIS MATTERS</span>
+                <h2 class="content-heading">WHY THIS MATTERS</h2>
+                <p class="content-text">
+                    Ever looked at an app and instantly knew where to tap — without reading a single label? That's not magic. That's Gestalt.
+                </p>
+                <p class="content-text">
+                    Gestalt principles are a set of rules from psychology that explain how the human brain groups visual information. Our brains are lazy in the best way — they constantly look for shortcuts to make sense of what they see.
+                </p>
+                <p class="content-text">
+                    As a UI designer, if you understand how users perceive your interface before they even consciously process it, you're already ahead of 80% of designers out there.
+                </p>
+                <p class="content-text">Let's break down the 5 that matter most.</p>
+            </div>
+
+            <div class="content-block" id="proximity" data-section-id="proximity" data-animate="reveal">
+                <span class="mono-small content-label">02 — PROXIMITY</span>
+                <h2 class="content-heading">PROXIMITY</h2>
+                <p class="content-text"><strong>Things that are close together feel related.</strong></p>
+                <p class="content-text">
+                    This is the most used (and most abused) principle in UI design.
+                </p>
+                <p class="content-text">
+                    When you place a label right next to an input field, users instantly understand they go together. When you put a button 80px away from the form it submits, users hesitate — even if it makes no logical difference.
+                </p>
+                <p class="content-text"><strong>Real example:</strong> In a form, grouping "First Name" and "Last Name" fields together and leaving a gap before the "Email" field tells the user those are different categories of information — without writing a single word.</p>
+                <p class="content-text"><strong>Design rule:</strong> Use spacing intentionally. Proximity = relationship. If two elements aren't related, give them room.</p>
+            </div>
+
+            <div class="content-block" id="similarity" data-section-id="similarity" data-animate="reveal">
+                <span class="mono-small content-label">03 — SIMILARITY</span>
+                <h2 class="content-heading">SIMILARITY</h2>
+                <p class="content-text"><strong>Things that look alike feel like they belong to the same group.</strong></p>
+                <p class="content-text">
+                    Same colour, same shape, same size — users will group them together automatically.
+                </p>
+                <p class="content-text">
+                    This is why all your primary buttons should look the same. The moment you have three different button styles on one screen, users get confused about what's clickable and what isn't.
+                </p>
+                <p class="content-text"><strong>Real example:</strong> On a dashboard, if your data cards all have the same border and shadow, users scan them as "one thing." If one card suddenly has a different colour, users assume it's different — important, selected, or broken.</p>
+                <p class="content-text"><strong>Design rule:</strong> Be consistent with visual language. Similarity creates patterns. Patterns create confidence.</p>
+            </div>
+
+            <div class="content-block" id="closure" data-section-id="closure" data-animate="reveal">
+                <span class="mono-small content-label">04 — CLOSURE</span>
+                <h2 class="content-heading">CLOSURE</h2>
+                <p class="content-text"><strong>The brain fills in the gaps.</strong></p>
+                <p class="content-text">
+                    Humans are so good at pattern recognition that we complete incomplete shapes automatically. You don't need to draw every pixel — the brain does the work.
+                </p>
+                <p class="content-text"><strong>Real example:</strong> A circle with a small gap is still read as a circle. A progress ring that's 80% complete doesn't need a label — users feel the 20% missing. Loading skeletons work because the brain reads the grey blocks as "content is coming."</p>
+                <p class="content-text"><strong>Design rule:</strong> You don't always need borders, outlines, or complete shapes. Use closure to reduce visual noise while keeping things readable.</p>
+            </div>
+
+            <div class="content-block" id="continuity" data-section-id="continuity" data-animate="reveal">
+                <span class="mono-small content-label">05 — CONTINUITY</span>
+                <h2 class="content-heading">CONTINUITY</h2>
+                <p class="content-text"><strong>The eye follows paths.</strong></p>
+                <p class="content-text">
+                    When elements are arranged in a line or curve, users follow that path naturally — even if it breaks.
+                </p>
+                <p class="content-text"><strong>Real example:</strong> A row of product cards leads your eye left to right. An arrow pointing right makes you look right. A diagonal line in a hero image pulls your gaze toward the headline.</p>
+                <p class="content-text">
+                    This is why good landing pages feel like they flow. Bad ones feel like your eye doesn't know where to go next.
+                </p>
+                <p class="content-text"><strong>Design rule:</strong> Use alignment and direction to control where the user looks. Every element should either guide the eye toward the next thing — or stop it at something important.</p>
+            </div>
+
+            <div class="content-block" id="figure-ground" data-section-id="figure-ground" data-animate="reveal">
+                <span class="mono-small content-label">06 — FIGURE &amp; GROUND</span>
+                <h2 class="content-heading">FIGURE &amp; GROUND</h2>
+                <p class="content-text"><strong>There's always a foreground and a background. Make sure users know which is which.</strong></p>
+                <p class="content-text">
+                    The classic example is the vase-or-faces optical illusion. Your UI should never create that confusion.
+                </p>
+                <p class="content-text"><strong>Real example:</strong> Modal dialogs work because the darkened overlay pushes everything into "background," making the modal feel like it floats in the foreground. If the overlay isn't dark enough, users aren't sure what to focus on.</p>
+                <p class="content-text"><strong>Design rule:</strong> Use contrast, shadows, and layering to establish clear visual depth. The user's focus should never be ambiguous.</p>
+            </div>
+
+            <div class="content-block" id="takeaway" data-section-id="takeaway" data-animate="reveal">
+                <span class="mono-small content-label">07 — THE TAKEAWAY</span>
+                <h2 class="content-heading">THE TAKEAWAY</h2>
+                <p class="content-text">
+                    You don't need to memorise these as abstract rules. Just train yourself to ask one question as you design:
+                </p>
+                <blockquote class="article-quote">
+                    <p class="content-text">"What will the user's brain group, follow, or fill in here — and is that what I want?"</p>
+                </blockquote>
+                <p class="content-text">
+                    Gestalt isn't a checklist. It's a lens. Once you start seeing your designs through it, you'll catch layout mistakes before users ever do.
+                </p>
+                <p class="content-text">
+                    Next time you're reviewing a design, try this: Cover the labels. Can users still understand what goes with what, what's clickable, and where to look next? If yes — your visual language is doing its job.
+                </p>
+            </div>
+        </main>
+    </section>
+
+    <section class="next-project" data-cursor="NEXT">
+        <a href="article-ux-process.html" class="next-project-link">
+            <span class="mono-small">NEXT ARTICLE</span>
+            <h2 class="next-project-title">
+                <span>FROM CHAOS TO</span>
+                <span>CLARITY</span>
+                <span class="next-arrow">→</span>
+            </h2>
+        </a>
+    </section>
+
+    <footer class="footer footer--minimal">
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sudarshan-madewad-425148239" target="_blank" rel="noopener noreferrer" class="footer-link">LINKEDIN</a>
+                <a href="https://drive.google.com/file/d/1gZ835vhDTTZnPCy46UqVdgejBbxXGpHn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">RESUME</a>
+                <a href="mailto:sudarshanmadewad1@gmail.com" class="footer-link">EMAIL</a>
+            </div>
+            <span class="mono-small">© 2026 SUDARSHAN MADEWAD</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=20260626a"></script>
+</body>
+</html>

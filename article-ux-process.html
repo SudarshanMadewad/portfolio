@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Chaos to Clarity: My UX Design Process — Sudarshan Madewad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=20260626a">
+</head>
+<body class="project-manipal-case-study">
+    <div class="cursor-follower" id="cursorFollower">
+        <span class="cursor-label" id="cursorLabel"></span>
+    </div>
+
+    <div class="page-transition" id="pageTransition"></div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">SM<span class="accent">.</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link" data-label="01">Index</a>
+            <a href="journey.html" class="nav-link" data-label="02">Journey</a>
+            <a href="articles.html" class="nav-link active" data-label="03">Articles</a>
+            <a href="archive.html" class="nav-link" data-label="04">Archive</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">◐</span>
+        </button>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="articles.html" class="back-link">
+                <span class="mono-small">← BACK TO ARTICLES</span>
+            </a>
+            <h1 class="project-hero-title" data-animate="hero">
+                <span class="hero-line">FROM CHAOS TO</span>
+                <span class="hero-line">CLARITY: MY UX DESIGN PROCESS</span>
+            </h1>
+            <p class="project-hero-subtitle" data-animate="hero-sub">
+                A behind-the-scenes look at how I turn messy briefs into clean, user-tested interfaces.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-layout">
+        <aside class="project-sidebar" data-animate="reveal">
+            <div class="project-sidebar-inner">
+                <div class="sidebar-block">
+                    <span class="mono-small">TOPIC</span>
+                    <p class="sidebar-value">Design Process</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">READ TIME</span>
+                    <p class="sidebar-value">7 min read</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">PUBLISHED</span>
+                    <p class="sidebar-value">May 2026</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">LEVEL</span>
+                    <p class="sidebar-value">Intermediate</p>
+                </div>
+                <div class="sidebar-block">
+                    <span class="mono-small">SECTIONS</span>
+                    <div class="sidebar-detail-list">
+                        <a href="#the-honest-truth-about-process" class="sidebar-detail-line article-toc-link" data-section-link="the-honest-truth-about-process">01 — THE HONEST TRUTH ABOUT PROCESS</a>
+                        <a href="#understand-before-you-design-anything" class="sidebar-detail-line article-toc-link" data-section-link="understand-before-you-design-anything">02 — UNDERSTAND (BEFORE YOU DESIGN ANYTHING)</a>
+                        <a href="#research-but-keep-it-focused" class="sidebar-detail-line article-toc-link" data-section-link="research-but-keep-it-focused">03 — RESEARCH (BUT KEEP IT FOCUSED)</a>
+                        <a href="#wireframes-think-in-structure-not-beauty" class="sidebar-detail-line article-toc-link" data-section-link="wireframes-think-in-structure-not-beauty">04 — WIREFRAMES (THINK IN STRUCTURE, NOT BEAUTY)</a>
+                        <a href="#high-fidelity-where-structure-meets-feeling" class="sidebar-detail-line article-toc-link" data-section-link="high-fidelity-where-structure-meets-feeling">05 — HIGH FIDELITY (WHERE STRUCTURE MEETS FEELING)</a>
+                        <a href="#testing-the-part-most-designers-skip" class="sidebar-detail-line article-toc-link" data-section-link="testing-the-part-most-designers-skip">06 — TESTING (THE PART MOST DESIGNERS SKIP)</a>
+                        <a href="#the-loop" class="sidebar-detail-line article-toc-link" data-section-link="the-loop">07 — THE LOOP</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="project-content">
+            <div class="content-block" id="the-honest-truth-about-process" data-section-id="the-honest-truth-about-process" data-animate="reveal">
+                <span class="mono-small content-label">01 — THE HONEST TRUTH ABOUT PROCESS</span>
+                <h2 class="content-heading">THE HONEST TRUTH ABOUT PROCESS</h2>
+                <p class="content-text">
+                    Most "design processes" you see online look perfect on a slide deck. In reality, they're messy, non-linear, and full of backtracking.
+                </p>
+                <p class="content-text">
+                    My process isn't perfect either. But after working across university platforms, creative agencies, and data dashboards — I've found a rhythm that consistently gets me from a fuzzy brief to something users actually want to use.
+                </p>
+                <p class="content-text">Here's exactly how I work, step by step.</p>
+            </div>
+
+            <div class="content-block" id="understand-before-you-design-anything" data-section-id="understand-before-you-design-anything" data-animate="reveal">
+                <span class="mono-small content-label">02 — UNDERSTAND (BEFORE YOU DESIGN ANYTHING)</span>
+                <h2 class="content-heading">UNDERSTAND (BEFORE YOU DESIGN ANYTHING)</h2>
+                <p class="content-text">
+                    The biggest mistake junior designers make? Opening Figma before they understand the problem.
+                </p>
+                <p class="content-text">Before I touch any design tool, I spend time answering three questions:</p>
+                <ul class="case-list">
+                    <li>Who is this for — and what do they actually need to do?</li>
+                    <li>What does success look like for the business?</li>
+                    <li>What's the one thing this design must get right?</li>
+                </ul>
+                <p class="content-text">
+                    I write these down as a simple brief — even if the client gave me one. Rewriting it in my own words forces me to find the gaps.
+                </p>
+                <p class="content-text"><strong>On the Manipal University project:</strong> The client said "redesign the homepage." But the real problem was that prospective students couldn't find programs fast enough and were bouncing. That reframe changed everything about how I approached the design.</p>
+            </div>
+
+            <div class="content-block" id="research-but-keep-it-focused" data-section-id="research-but-keep-it-focused" data-animate="reveal">
+                <span class="mono-small content-label">03 — RESEARCH (BUT KEEP IT FOCUSED)</span>
+                <h2 class="content-heading">RESEARCH (BUT KEEP IT FOCUSED)</h2>
+                <p class="content-text">
+                    I don't do months of research. I do focused research that directly answers the questions I have.
+                </p>
+                <p class="content-text">For most projects I do two things:</p>
+                <p class="content-text"><strong>Heuristic audit:</strong> I go through the existing product (if there is one) and mark everything that violates basic usability principles — hierarchy issues, unclear CTAs, confusing navigation, inconsistent patterns.</p>
+                <p class="content-text"><strong>Competitor scan:</strong> I look at 3–5 similar products and note what they do well — not to copy, but to understand user expectations. Users come to your product with habits built from other products. Fighting those habits is always expensive.</p>
+                <p class="content-text">The output is a list of clear problems and a sense of what users already expect.</p>
+            </div>
+
+            <div class="content-block" id="wireframes-think-in-structure-not-beauty" data-section-id="wireframes-think-in-structure-not-beauty" data-animate="reveal">
+                <span class="mono-small content-label">04 — WIREFRAMES (THINK IN STRUCTURE, NOT BEAUTY)</span>
+                <h2 class="content-heading">WIREFRAMES (THINK IN STRUCTURE, NOT BEAUTY)</h2>
+                <p class="content-text">
+                    Wireframes are where I do my actual design thinking. Not in high-fidelity. Not in colour. Just boxes and text.
+                </p>
+                <p class="content-text">I use low-fidelity wireframes to answer layout questions:</p>
+                <ul class="case-list">
+                    <li>What's the most important thing on this screen?</li>
+                    <li>What does the user need to do next?</li>
+                    <li>How much information is too much?</li>
+                </ul>
+                <p class="content-text">
+                    I share wireframes early and often — before anyone falls in love with a visual direction. It's much easier to move a box than to rebuild a polished component.
+                </p>
+                <p class="content-text"><strong>Rule I follow:</strong> If I can't explain the wireframe without talking through it — it needs to be simpler.</p>
+            </div>
+
+            <div class="content-block" id="high-fidelity-where-structure-meets-feeling" data-section-id="high-fidelity-where-structure-meets-feeling" data-animate="reveal">
+                <span class="mono-small content-label">05 — HIGH FIDELITY (WHERE STRUCTURE MEETS FEELING)</span>
+                <h2 class="content-heading">HIGH FIDELITY (WHERE STRUCTURE MEETS FEELING)</h2>
+                <p class="content-text">
+                    Once the layout is locked, I move to high-fidelity in Figma.
+                </p>
+                <p class="content-text">
+                    This is where typography, colour, spacing, and micro-interactions come in. But by this point, the hard decisions are already made. High-fidelity is about execution — making the structure feel right, not figuring out what the structure should be.
+                </p>
+                <p class="content-text">Things I focus on at this stage:</p>
+                <ul class="case-list">
+                    <li>Visual hierarchy — does the eye go where I want it to?</li>
+                    <li>Consistency — are similar things treated the same way?</li>
+                    <li>Edge cases — what does this look like with long text, empty states, or errors?</li>
+                </ul>
+            </div>
+
+            <div class="content-block" id="testing-the-part-most-designers-skip" data-section-id="testing-the-part-most-designers-skip" data-animate="reveal">
+                <span class="mono-small content-label">06 — TESTING (THE PART MOST DESIGNERS SKIP)</span>
+                <h2 class="content-heading">TESTING (THE PART MOST DESIGNERS SKIP)</h2>
+                <p class="content-text">
+                    Testing doesn't need to be a formal lab study. Even showing your design to 3 people who aren't designers tells you more than you'd expect.
+                </p>
+                <p class="content-text">
+                    I look for moments of hesitation. Where did they pause? Where did they click something they weren't supposed to? Where did they ask "what does this do?"
+                </p>
+                <p class="content-text">
+                    Those moments are gold. Each one is a design decision I got wrong — and now I know exactly what to fix.
+                </p>
+                <p class="content-text"><strong>Key mindset:</strong> Testing isn't about proving your design works. It's about finding where it doesn't — while it's still cheap to change.</p>
+            </div>
+
+            <div class="content-block" id="the-loop" data-section-id="the-loop" data-animate="reveal">
+                <span class="mono-small content-label">07 — THE LOOP</span>
+                <h2 class="content-heading">THE LOOP</h2>
+                <p class="content-text">
+                    The process isn't linear. After testing, I usually go back to wireframes — or sometimes all the way back to understanding.
+                </p>
+                <p class="content-text">
+                    That's not failure. That's design working correctly.
+                </p>
+                <p class="content-text">
+                    The goal isn't to finish the process. The goal is to reach a design where the problems are gone and the user feels confident. However many loops it takes to get there — that's the right number.
+                </p>
+            </div>
+        </main>
+    </section>
+
+    <section class="next-project" data-cursor="NEXT">
+        <a href="article-visual-hierarchy.html" class="next-project-link">
+            <span class="mono-small">NEXT ARTICLE</span>
+            <h2 class="next-project-title">
+                <span>WHY VISUAL</span>
+                <span>HIERARCHY MATTERS</span>
+                <span class="next-arrow">→</span>
+            </h2>
+        </a>
+    </section>
+
+    <footer class="footer footer--minimal">
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sudarshan-madewad-425148239" target="_blank" rel="noopener noreferrer" class="footer-link">LINKEDIN</a>
+                <a href="https://drive.google.com/file/d/1gZ835vhDTTZnPCy46UqVdgejBbxXGpHn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">RESUME</a>
+                <a href="mailto:sudarshanmadewad1@gmail.com" class="footer-link">EMAIL</a>
+            </div>
+            <span class="mono-small">© 2026 SUDARSHAN MADEWAD</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=20260626a"></script>
+</body>
+</html>

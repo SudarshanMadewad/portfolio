@@ -35,6 +35,54 @@
 
     loadTheme();
 
+    function widenTextSpacing(root) {
+        if (!root || root.dataset.readableSpacingApplied === 'true') {
+            return;
+        }
+
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+        var textNodes = [];
+
+        while (walker.nextNode()) {
+            textNodes.push(walker.currentNode);
+        }
+
+        textNodes.forEach(function (node) {
+            if (!node.nodeValue || !node.nodeValue.trim()) {
+                return;
+            }
+
+            var parent = node.parentNode;
+            if (!parent || parent.closest('script, style, pre, code, [data-no-spacing]')) {
+                return;
+            }
+
+            var parts = node.nodeValue.split(/(\s+)/);
+            if (parts.length < 2) {
+                return;
+            }
+
+            var fragment = document.createDocumentFragment();
+
+            parts.forEach(function (part) {
+                if (/^\s+$/.test(part)) {
+                    fragment.appendChild(document.createTextNode('\u00A0 '));
+                } else {
+                    fragment.appendChild(document.createTextNode(part));
+                }
+            });
+
+            parent.replaceChild(fragment, node);
+        });
+
+        root.dataset.readableSpacingApplied = 'true';
+    }
+
+    var spacingTargets = document.querySelectorAll('.project-hero-subtitle, .content-text, .statement-subtext, .project-card-desc, .articles-hero-subtitle, .exp-highlight-desc');
+    spacingTargets.forEach(function (target) {
+        widenTextSpacing(target);
+    });
+
     if (themeToggle) {
         themeToggle.addEventListener('click', function () {
             const current = html.getAttribute('data-theme');
@@ -346,6 +394,81 @@
             event.preventDefault();
         });
     });
+
+    // --- Articles filter sidebar ---
+    var articleFilterButtons = document.querySelectorAll('[data-article-filter]');
+    var articleCards = document.querySelectorAll('[data-article-card]');
+
+    if (articleFilterButtons.length > 0 && articleCards.length > 0) {
+        function setActiveArticleFilter(filter) {
+            articleFilterButtons.forEach(function (button) {
+                var isActive = button.getAttribute('data-article-filter') === filter;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+
+            articleCards.forEach(function (card) {
+                var cardTag = card.getAttribute('data-article-tag');
+                var isVisible = filter === 'ALL' || cardTag === filter;
+                card.style.display = isVisible ? '' : 'none';
+            });
+
+            if (window.ScrollTrigger) {
+                ScrollTrigger.refresh();
+            }
+        }
+
+        articleFilterButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                setActiveArticleFilter(button.getAttribute('data-article-filter') || 'ALL');
+            });
+        });
+
+        setActiveArticleFilter('ALL');
+    }
+
+    // --- Article sidebar scrollspy ---
+    var articlePage = document.body.classList.contains('project-manipal-case-study');
+    var tocLinks = document.querySelectorAll('.article-toc-link[data-section-link]');
+    var articleSections = document.querySelectorAll('[data-section-id]');
+
+    if (articlePage && tocLinks.length > 0 && articleSections.length > 0 && 'IntersectionObserver' in window) {
+        var tocMap = {};
+        tocLinks.forEach(function (link) {
+            var sectionId = link.getAttribute('data-section-link');
+            if (sectionId) {
+                tocMap[sectionId] = link;
+            }
+        });
+
+        var setActiveTocLink = function (sectionId) {
+            tocLinks.forEach(function (link) {
+                link.classList.toggle('active', link.getAttribute('data-section-link') === sectionId);
+            });
+        };
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var sectionId = entry.target.getAttribute('data-section-id');
+                    if (sectionId && tocMap[sectionId]) {
+                        setActiveTocLink(sectionId);
+                    }
+                }
+            });
+        }, {
+            rootMargin: '-35% 0px -55% 0px',
+            threshold: 0
+        });
+
+        articleSections.forEach(function (section) {
+            observer.observe(section);
+        });
+
+        if (tocLinks[0]) {
+            tocLinks[0].classList.add('active');
+        }
+    }
 
     // --- Skill tag hover physics ---
     var skillTags = document.querySelectorAll('.skill-tags span');

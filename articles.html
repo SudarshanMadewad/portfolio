@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles — Sudarshan Madewad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=20260626a">
+</head>
+<body>
+    <div class="cursor-follower" id="cursorFollower">
+        <span class="cursor-label" id="cursorLabel"></span>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">SM<span class="accent">.</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link" data-label="01">Index</a>
+            <a href="journey.html" class="nav-link" data-label="02">Journey</a>
+            <a href="articles.html" class="nav-link active" data-label="03">Articles</a>
+            <a href="archive.html" class="nav-link" data-label="04">Archive</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">◐</span>
+        </button>
+    </nav>
+
+    <section class="archive-hero articles-hero">
+        <div class="archive-hero-content">
+            <div class="hero-overline">
+                <span class="mono-small">04 / ARTICLES</span>
+            </div>
+            <h1 class="archive-hero-title" data-animate="hero">
+                <span class="hero-line">WRITINGS</span>
+                <span class="hero-line">&amp; THOUGHTS<span class="accent">.</span></span>
+            </h1>
+            <p class="articles-hero-subtitle" data-animate="hero-sub">
+                Essays on UX principles, design process, and product thinking.
+            </p>
+        </div>
+    </section>
+
+    <section class="articles-section">
+        <div class="articles-layout">
+            <div class="articles-content">
+                <div class="articles-filters-mobile" role="tablist" aria-label="Article topic filters">
+                    <button class="article-filter article-filter--chip active" type="button" data-article-filter="ALL" aria-pressed="true">ALL</button>
+                    <button class="article-filter article-filter--chip" type="button" data-article-filter="UX PRINCIPLES" aria-pressed="false">UX PRINCIPLES</button>
+                    <button class="article-filter article-filter--chip" type="button" data-article-filter="DESIGN PROCESS" aria-pressed="false">DESIGN PROCESS</button>
+                    <button class="article-filter article-filter--chip" type="button" data-article-filter="UI DESIGN" aria-pressed="false">UI DESIGN</button>
+                </div>
+
+                <div class="articles-grid">
+                    <a href="article-gestalt.html" class="project-card articles-card" data-animate="project" data-article-card data-article-tag="UX PRINCIPLES" data-cursor="OPEN ARTICLE">
+                        <div class="project-card-image">
+                            <div class="project-card-placeholder">
+                                <span class="project-card-placeholder-num">01</span>
+                                <span class="project-card-placeholder-title">UX PRINCIPLES</span>
+                            </div>
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-meta">
+                                <span class="mono-small">UX PRINCIPLES</span>
+                                <span class="mono-small">2026</span>
+                            </div>
+                            <h3 class="project-card-title">The 5 Gestalt Principles Every UI Designer Must Know</h3>
+                            <p class="project-card-desc">How proximity, similarity, and figure-ground shape the way users perceive interfaces.</p>
+                            <div class="project-card-link">
+                                <span class="mono-small">READ ARTICLE</span>
+                                <span class="project-card-link-arrow">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-ux-process.html" class="project-card articles-card" data-animate="project" data-article-card data-article-tag="DESIGN PROCESS" data-cursor="OPEN ARTICLE">
+                        <div class="project-card-image">
+                            <div class="project-card-placeholder">
+                                <span class="project-card-placeholder-num">02</span>
+                                <span class="project-card-placeholder-title">DESIGN PROCESS</span>
+                            </div>
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-meta">
+                                <span class="mono-small">DESIGN PROCESS</span>
+                                <span class="mono-small">2026</span>
+                            </div>
+                            <h3 class="project-card-title">From Chaos to Clarity: My UX Design Process</h3>
+                            <p class="project-card-desc">How I move from vague problem statements to polished, user-tested interfaces.</p>
+                            <div class="project-card-link">
+                                <span class="mono-small">READ ARTICLE</span>
+                                <span class="project-card-link-arrow">→</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="article-visual-hierarchy.html" class="project-card articles-card" data-animate="project" data-article-card data-article-tag="UI DESIGN" data-cursor="OPEN ARTICLE">
+                        <div class="project-card-image">
+                            <div class="project-card-placeholder">
+                                <span class="project-card-placeholder-num">03</span>
+                                <span class="project-card-placeholder-title">UI DESIGN</span>
+                            </div>
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-meta">
+                                <span class="mono-small">UI DESIGN</span>
+                                <span class="mono-small">2026</span>
+                            </div>
+                            <h3 class="project-card-title">Why Visual Hierarchy Is the Most Underrated UX Skill</h3>
+                            <p class="project-card-desc">Most design mistakes aren't about colour — they're about failing to guide the user's eye.</p>
+                            <div class="project-card-link">
+                                <span class="mono-small">READ ARTICLE</span>
+                                <span class="project-card-link-arrow">→</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer--minimal">
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sudarshan-madewad-425148239" target="_blank" rel="noopener noreferrer" class="footer-link">LINKEDIN</a>
+                <a href="https://drive.google.com/file/d/1gZ835vhDTTZnPCy46UqVdgejBbxXGpHn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">RESUME</a>
+                <a href="mailto:sudarshanmadewad1@gmail.com" class="footer-link">EMAIL</a>
+            </div>
+            <span class="mono-small">© 2026 SUDARSHAN MADEWAD</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=20260626a"></script>
+</body>
+</html>
